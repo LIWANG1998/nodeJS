@@ -4,10 +4,15 @@ const router = require("express").Router();
 // 2. 处理路由
 // => jsonp
 router.get("/jsonp", (req, res) => {
-    let fnName = req.query.callback;
+    let fnName = req.query.nm;
     let data = {
-        name: "木子李",
-        address: "四川省成都市高新区"
+        name: "liwang",
+        address: "四川省成都市成华区"
+    }
+    console.log(req.query)
+    if (!fnName) {
+        res.send("参数不正确");
+        return
     }
     res.send(`${fnName}(${JSON.stringify(data)})`);
 });
