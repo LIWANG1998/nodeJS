@@ -7,7 +7,8 @@ router.get("/jsonp", (req, res) => {
     let fnName = req.query.nm;
     let data = {
         name: "liwang",
-        address: "四川省成都市成华区"
+        address: "四川省成都市成华区",
+        title: "李旺最帅~~~~"
     }
     console.log(req.query)
     if (!fnName) {

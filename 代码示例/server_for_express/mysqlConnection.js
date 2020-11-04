@@ -5,7 +5,7 @@ const defaultOptions = {
     host: "127.0.0.1",
     port: "3306",
     user: "root",
-    password: "123",
+    password: "549264",
     database: "Heros"
 }
 // 获取connection对象
